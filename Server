@@ -55,7 +55,7 @@ if __name__ == "__main__":
             i=(MBX[u])
             t.append(i)
             s = len(t)
-            MBX[w] = t
+            MBX[u] = t
             clientsocket.sendall("COUNTED "+ str(s))
          else:
             clientsocket.sendall(b"KO\0")
